@@ -106,8 +106,7 @@ void play_game(void)
 		printf("%s", stone[other]);
 		display_stone(matrix);
 		gotoxy(1, 20);
-		printf("방향키로 움직이고 ");
-		printf("스페이스 바를 누르시오.");
+		printf("방향키로 움직이고 스페이스바로 돌을 놓으시오");	
 		gotoxy(1, 21);		
 		key = _getch();
 		if (key == 27)
