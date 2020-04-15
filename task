@@ -1,0 +1,23 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class params1
+    {
+        public static void Add(params int[] List)
+        {
+            int sum = 0;
+            foreach(int elem in List)
+            {
+                Console.Write(elem.ToString() + " ");
+                sum += elem;
+            }            
+            Console.WriteLine("\n\n2) 매개 변수의 합계 : " + sum.ToString());
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("1) 매개 변수의 전체: ");
+            Add(1,2,7,11,13,16,20,22,27,35);
+        }
+    }
+}
